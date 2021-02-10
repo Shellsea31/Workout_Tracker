@@ -1,8 +1,17 @@
 // API ROUTES -- refer to api.js
-// get most recent workout
+const db = require("../models");
 
-// add an exercise
+module.exports = (app) => {
+  // get most recent workout
+  app.get("/api/workouts", async (req, res) => {
+    const recent = await db.Workout.find({})
+    console.log(recent)
 
-// create a workout
+    res.json(recent)
+  });
+  // add an exercise
 
-// get ranges for a workout
+  // create a workout
+
+  // get ranges for a workout
+};
