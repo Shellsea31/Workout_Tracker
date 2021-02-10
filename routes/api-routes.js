@@ -26,10 +26,28 @@ module.exports = (app) => {
         res.json(result);
       })
       .catch((err) => {
-        res.json(err)
+        res.json(err);
       });
   });
   // create a workout
-
+  app.post("/api/workouts", (req, res) => {
+    db.Workout.create({})
+      .then((result) => {
+        console.log(result);
+        res.json(result);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
   // get ranges for a workout
+  app.get("/api/workouts/range", (req, res) => {
+    db.Workout.find({})
+      .sort({ day: -1 })
+      .limit(7)
+      .then((result) => {
+        console.log(result);
+        res.json(result);
+      });
+  });
 };
