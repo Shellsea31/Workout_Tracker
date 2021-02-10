@@ -12,11 +12,23 @@ module.exports = (app) => {
       exercises: recent[0].exercises,
     };
 
-    console.log(lastWorkout);
     res.json(lastWorkout);
   });
   // add an exercise
-
+  app.put("/api/workouts/:id", (req, res) => {
+    db.Workout.findByIdAndUpdate(
+      req.params.id,
+      { $push: { exercises: req.body } },
+      { new: true }
+    )
+      .then((result) => {
+        console.log(result);
+        res.json(result);
+      })
+      .catch((err) => {
+        res.json(err)
+      });
+  });
   // create a workout
 
   // get ranges for a workout
