@@ -21,6 +21,8 @@ Upon opening the app, you will be presented with your most recent workout stats 
 ![image](https://user-images.githubusercontent.com/70654835/107709483-235c6600-6c7a-11eb-8397-60858ed6ba06.png)
 ![image](https://user-images.githubusercontent.com/70654835/107709506-2e16fb00-6c7a-11eb-8be9-df5962ad3c50.png)
 
+**To view the live version, you can click [here](https://wrkt-trkr.herokuapp.com/?id=60259f137daa280015c7149c)**
+
 
 ## Contributors
  **Shelsy Barrera**
