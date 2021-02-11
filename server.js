@@ -13,8 +13,6 @@ app.use(express.json());
 
 // serve html
 app.use(express.static("public"));
-require("./routes/api-routes")(app);
-require("./routes/html-routes")(app);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
@@ -22,6 +20,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useCreateIndex: true,
   useFindAndModify: false,
 });
+
+app.use(require("./routes/api-routes"));
+app.use(require("./routes/html-routes"))
 
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
