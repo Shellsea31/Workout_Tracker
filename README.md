@@ -17,6 +17,10 @@ Upon opening the app, you will be presented with your most recent workout stats 
 - static html
 
 ## Demo
+![image](https://user-images.githubusercontent.com/70654835/107709416-0758c480-6c7a-11eb-89a3-7b4df4b24d00.png)
+![image](https://user-images.githubusercontent.com/70654835/107709483-235c6600-6c7a-11eb-8397-60858ed6ba06.png)
+![image](https://user-images.githubusercontent.com/70654835/107709506-2e16fb00-6c7a-11eb-8be9-df5962ad3c50.png)
+
 
 ## Contributors
  **Shelsy Barrera**
