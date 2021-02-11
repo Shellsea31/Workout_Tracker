@@ -1,5 +1,5 @@
 // API ROUTES -- refer to api.js
-const Workout = require("../models/workout");
+const Workout = require("../models/Workout");
 
 module.exports = (app) => {
   // get most recent workout
