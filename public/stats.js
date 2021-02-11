@@ -197,11 +197,8 @@ function calculateTotalDuration(data) {
   data.forEach((workout) => {
     const workoutTotal = workout.exercises.reduce(
       (total, { type, duration }) => {
-        if (type === "cardio") {
-          return total + duration;
-        } else {
-          return total;
-        }
+
+        return total + duration
       },
       0
     );
